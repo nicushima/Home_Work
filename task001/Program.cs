@@ -11,5 +11,10 @@ Console.WriteLine($"случайное число -> {number}");
 
 int firstDidit = number / 10; // 78 / 10 = 7
 int secontDigit = number % 10;
-if (firstDidit > secontDigit) Console.WriteLine($"наибольшее число -> {firstDidit}");
-else Console.WriteLine($"наибольшее число -> {secontDigit}");
+
+//if (firstDidit > secontDigit) Console.WriteLine($"наибольшее число -> {firstDidit}");
+//else Console.WriteLine($"наибольшее число -> {secontDigit}");
+
+
+int maxDigit = firstDidit > secontDigit ? firstDidit : secontDigit; // тернанрный оператор  if и else
+Console.WriteLine($"наибольшее число -> {maxDigit}");
