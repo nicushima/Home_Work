@@ -19,11 +19,11 @@ Console.WriteLine($"случайное число -> {number}");
 //Console.WriteLine($"наибольшее число -> {maxDigit}");
 
 int MaxDigit = MaxDigit(number);
-Console.WriteLine($"наибольшее число -> {maxDigit}");
+Console.WriteLine($"наибольшее число -> {MaxDigit}");
 
 int MaxDigit(int num)
 {
     int firstDidit = num / 10;
-    int secontDigit = num % 10;
-    return firstDidit > secontDigit ? firstDidit : secontDigit;
+    int secondDigit = num % 10;
+    return firstDidit > secondDigit ? firstDidit : secondDigit;
 }
