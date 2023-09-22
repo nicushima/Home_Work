@@ -18,8 +18,8 @@ Console.WriteLine($"случайное число -> {number}");
 //int maxDigit = firstDidit > secontDigit ? firstDidit : secontDigit; // тернанрный оператор  if и else
 //Console.WriteLine($"наибольшее число -> {maxDigit}");
 
-int MaxDigit = MaxDigit(number);
-Console.WriteLine($"наибольшее число -> {MaxDigit}");
+int maxDigit = MaxDigit(number);
+Console.WriteLine($"наибольшее число -> {maxDigit}");
 
 int MaxDigit(int num)
 {
