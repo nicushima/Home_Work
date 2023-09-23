@@ -6,22 +6,27 @@
 85 -> 8 
 */
 
-int number = new Random().Next(10, 100); // 99 + 1
-Console.WriteLine($"случайное число -> {number}");
+int number = new Random().Next(10, 100); // команда вводит рандомное число 
+Console.WriteLine($"случайное число -> {number}"); // выводит в консоль рандомное сисло из (9)
 
-//int firstDidit = number / 10; // 78 / 10 = 7
-//int secontDigit = number % 10;
+int firstDidit = number / 10; // выводит первое чизло из рандомного 
+int secontDigit = number % 10; // выводит второе чизло из рандомного 
 
-//if (firstDidit > secontDigit) Console.WriteLine($"наибольшее число -> {firstDidit}");
-//else Console.WriteLine($"наибольшее число -> {secontDigit}");
-
-//int maxDigit = firstDidit > secontDigit ? firstDidit : secontDigit; // тернанрный оператор  if и else
-//Console.WriteLine($"наибольшее число -> {maxDigit}");
+if (firstDidit > secontDigit) // ставит условие что если первое число больше второго то выводить в консоль первое 
+{
+    Console.WriteLine($"наибольшее число -> {firstDidit}");
+}
+else // ексли не сработает условие то выводит второе сичло 
+{
+    Console.WriteLine($"наибольшее число -> {secontDigit}");
+}
+int maxDigit = firstDidit > secontDigit ? firstDidit : secontDigit; // тернанрный оператор  if и else
+Console.WriteLine($"наибольшее число -> {maxDigit}");
 
 int maxDigit = MaxDigit(number);
 Console.WriteLine($"наибольшее число -> {maxDigit}");
 
-int MaxDigit(int num)
+int MaxDigit(int num) // функция 
 {
     int firstDidit = num / 10;
     int secondDigit = num % 10;
