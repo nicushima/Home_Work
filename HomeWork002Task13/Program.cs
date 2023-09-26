@@ -14,7 +14,7 @@ else
       num = num / 10;
    }
 
-   num = num % 10 % 10;
+   num = num % 10;
    Console.WriteLine($"{number} -> {num}");
 }
 
