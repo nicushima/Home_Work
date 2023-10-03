@@ -20,4 +20,4 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 
 double result = FindDistance(x1, y1, x2, y2);
 double resultRound = Math.Round(result, 2, MidpointRounding.ToZero);
-Console.WriteLine(resultRound);
+Console.WriteLine(result);
