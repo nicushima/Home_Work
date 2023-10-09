@@ -11,10 +11,11 @@
 int SumElemMainDiagonal(int[,] matrix)
 {
     int sum = 0;
-    int minSize = matrix.GetLength(0);
-    if (minSize > matrix.GetLength(1)) minSize = matrix.GetLength(1);
-
-    for (int i = 0; i < minSize; i++ )
+    //int minSize = matrix.GetLength(0);
+    //if (minSize > matrix.GetLength(1)) minSize = matrix.GetLength(1);
+    //for (int i = 0; i < minSize; i++ )
+    
+    for (int i = 0; i < matrix.GetLength(0) && i < matrix.GetLength(1); i++ )
     {
         sum += matrix[i,i];
     }
@@ -55,7 +56,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[,] array2d = CreateMatrixRndInt(5, 5, 1, 10);
+int[,] array2d = CreateMatrixRndInt(5, 4, 1, 10);
 PrintMatrix(array2d);
 
 int res = SumElemMainDiagonal(array2d);
