@@ -7,26 +7,11 @@
 int SumPozitivNumber(int num1, int num2, int num3, int num4, int num5)
 {
     int sum = 0;
-    if (num1 > 0)
-    {
-        sum += 1;
-    }    
-    if (num2 > 0)
-    {
-        sum += 1;
-    }  
-    if (num3 > 0)
-    {
-        sum += 1;
-    }   
-    if (num4 > 0)
-    {
-        sum += 1;
-    }   
-    if (num5 > 0)
-    {
-        sum += 1;
-    }   
+    if (num1 > 0) sum += 1;   
+    if (num2 > 0) sum += 1; 
+    if (num3 > 0) sum += 1;  
+    if (num4 > 0) sum += 1;
+    if (num5 > 0) sum += 1;
     return sum;
 }
 
