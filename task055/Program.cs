@@ -39,9 +39,20 @@ void PrintMatrix(int[,] matrix)
 // 2 3 1
 // 3 2 1
 
+void ReplaceFirstLastRows2(int[,] matrix) //первый метод 
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            int temp = matrix[i,j];
+            matrix[i,j] = matrix[j,i];
+            matrix[j,i] = temp;
+        }
+    }
+}
 
-
-void ReplaceFirstLastRows(int[,] matrix)
+void ReplaceFirstLastRows(int[,] matrix) // второй метод
 {
     for (int i = 0; i < matrix.GetLength(0) - 1; i++)
     {
@@ -56,6 +67,6 @@ void ReplaceFirstLastRows(int[,] matrix)
 
 int[,] array2d = CreateMatrixRndInt(4, 4, -100, 100);
 PrintMatrix(array2d);
-ReplaceFirstLastRows(array2d);
+ReplaceFirstLastRows2(array2d); // тут два варианта !!!
 Console.WriteLine();
 PrintMatrix(array2d);
