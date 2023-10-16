@@ -5,6 +5,7 @@
 //     // return (1) * 2 * 3 * 4 * 5 = 120
 
 // }
+// ЗДЕЛАТ ОТДЕЛЬНЫЙ ФАЙЛ !!!
 
 // Console.WriteLine(Factorial(5)); // 120
 
@@ -13,12 +14,15 @@
 // 453 -> 12
 // 45 -> 9
 
-int Factorial(int n) // 5 4 3 2 1
+int SumOfDigits(int n) // 453 45 4 0
 {
-	if(n == 1) return 1;
-	return n * Factorial(n - 1); // 5 4 3 2 
-    // return (1) * 2 * 3 * 4 * 5 = 120
+	if(n == 0) return 0;
+	return n % 10 + SumOfDigits(n / 10); //453 45 4 
+    // return 0 + 4 % 10 + 45 % 10 + 453 % 10 = 12
 
 }
 
-Console.WriteLine(Factorial(5)); // 120
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(SumOfDigits(number)); // 120
