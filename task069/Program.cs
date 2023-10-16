@@ -18,8 +18,8 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите целую степень числа A: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
-if (numberB<0) 
+if (numberB < 0)
 {
-    Console.WriteLine(1/(double)Pow(numberA,-numberB)); 
+    Console.WriteLine(1 / (double)Pow(numberA, -numberB));
 }
-else Console.WriteLine(Pow(numberA,numberB));
+else Console.WriteLine(Pow(numberA, numberB));
