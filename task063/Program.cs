@@ -4,17 +4,20 @@
 // N = 6 -> "1, 2, 3, 4, 5, 6"
 
 
-Console.WriteLine("ввидите натуральное число");
+Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 if(number < 1)
 {
-    Console.WriteLine("некоректный ввод");
+    Console.WriteLine("Некорректный ввод!");
     return;
 }
 
+PrintNaturalNumbers(number);
+
 void PrintNaturalNumbers(int num)
 {
-    if (num == 0) return;
+    if(num == 0) return;
     PrintNaturalNumbers(num - 1);
+    Console.Write($"{num} ");
 }
