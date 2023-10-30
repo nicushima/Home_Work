@@ -14,8 +14,10 @@ class Program
 
     static void Main()
     {
-        int m = 1;
-        int n = 1;
+        Console.WriteLine($"введите первое целое число");
+        int m = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"введите второе целое число");
+        int n = Convert.ToInt32(Console.ReadLine());
         int result = Ackermann(m, n);
         Console.WriteLine("Ackermann(" + m + ", " + n + ") = " + result);
     }
