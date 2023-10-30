@@ -23,7 +23,7 @@ else // если условие не сработает то выводит вт
 int maxDigit = firstDidit > secontDigit ? firstDidit : secontDigit; // тернанрный оператор  if и else
 Console.WriteLine($"наибольшее число -> {maxDigit}");
 
-int maxDigit = MaxDigit(number);
+maxDigit = MaxDigit(number);
 Console.WriteLine($"наибольшее число -> {maxDigit}");
 
 

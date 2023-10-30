@@ -13,7 +13,6 @@ void PrintNumber(int n, int count)
   PrintNumber(n, count + 1);
   Console.Write(count + ", ");
 }
-
 int InputNumbers(string input) 
 {
   Console.Write(input);
